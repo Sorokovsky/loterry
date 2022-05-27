@@ -1,0 +1,67 @@
+.users{
+    padding: 50px;
+    max-width: 1400px;
+    font-size: 20px;
+    border: 1px solid #000000;
+    background:  rgba(255, 255, 255, 0.6);
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+    height: 100px;
+}
+.open{
+   height: 100%;
+   transition: .3s all linear;
+}
+h2{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.close{
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 40px;
+    transform: rotate(45deg);
+    background: transparent;
+    border: unset;
+    cursor: pointer;
+    transition: .3s all ease;
+}
+.toopen{
+    transform: rotate(0deg);
+}
+.row{
+    display: flex;
+    align-items: center;
+    border: 2px solid #000000;
+    margin-bottom: 10px;
+}
+.number{
+    padding-right: 25px;
+    padding-left: 25px;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 2px;
+        background: #000;
+    }
+}
+.person{
+    display: block;
+    border: unset;
+    background-color: transparent;
+    outline: 0 !important;
+    &:focus-visible {
+        outline: none;
+        border: none;
+    }
+}
